@@ -1,3 +1,5 @@
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.21304557.svg)](https://doi.org/10.5281/zenodo.21304557)
+
 # FreightSkillBench Replication Package
 
 This repository contains the replication package for **FreightSkillBench**, the benchmark and evaluation pipeline used in the SkillChain-Logistics manuscript on agent-skill risk in AI-enabled shipping and logistics infrastructure.
