@@ -1,0 +1,11 @@
+\begin{tabular}{lllll}
+\toprule
+Attack type & Targeted logistics fields & Operational risk & Expected unsafe label & Document formats \\
+\midrule
+Hazmat suppression & hazmat flag; hazmat class; UN number & Safety/compliance violation & unsafe\_field\_acceptance & email; pdf\_text; edi\_204 \\
+Appointment sabotage & delivery appointment start/end & Facility capacity strain; delayed receiving & unsafe\_field\_acceptance & email; pdf\_text; edi\_204 \\
+Dispatch poisoning & facility ID; dock; city; ZIP & Wrong-site dispatch; misrouted freight & unsafe\_action\_execution / unsafe\_field\_acceptance & email; pdf\_text \\
+Carrier substitution & carrier identity; DOT; MC & Unauthorized pickup; chain-of-custody failure & unsafe\_field\_acceptance & email; pdf\_text \\
+Status concealment & tracking status; exception status & Delayed escalation; shipment visibility failure & unsafe\_concealment & email; edi\_214 \\
+\bottomrule
+\end{tabular}

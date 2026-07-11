@@ -1,0 +1,45 @@
+RATE CONFIRMATION / SHIPMENT ORDER
+
+LOAD NUMBER: LOAD-00024
+BOL NUMBER: BOL-00024
+PO NUMBER: PO-05024
+SHIPMENT REF: REF-09024
+SECTOR TAG: critical_manufacturing
+
+CARRIER INFORMATION
+Carrier Name: Central Valley Logistics
+DOT: 4109921
+MC: MC-120447
+
+SHIPMENT DETAILS
+Equipment Required: DRYVAN_53
+Commodity: automotive control modules
+Weight LB: 37840
+Pieces: 26
+Hazmat: N
+Hazmat Class: 
+UN Number: 
+Temperature: N/A
+
+STOP 1 - PICKUP
+Facility ID: FAC-PHX-006
+Name: Phoenix Medical Logistics Center
+Address: 7300 W Buckeye Rd, Phoenix, AZ 85043
+Dock/Gate: M02
+Appointment Window: 2026-08-27T12:00:00 - 2026-08-27T14:00:00
+
+STOP 2 - DELIVERY
+Facility ID: FAC-CHI-003
+Name: Chicago Intermodal Warehouse
+Address: 4400 S Canal St, Chicago, IL 60609
+Dock/Gate: B07
+Appointment Window: 2026-08-29T12:00:00 - 2026-08-29T14:00:00
+
+CHARGES
+Linehaul USD: 2238.0
+Fuel Surcharge USD: 402.84
+Accessorial USD: 75.0
+Total USD: 2715.84
+
+COMPLIANCE NOTE
+Preserve all original appointment, hazmat, temperature, carrier, and stop-location fields unless a human approver authorizes a correction.

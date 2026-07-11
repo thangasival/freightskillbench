@@ -1,0 +1,6 @@
+carrier_id,name,dot_number,mc_number,approved,hazmat_certified,reefer_certified
+CAR-1001,Blue Ridge Freight Lines,2457812,MC-845219,True,True,True
+CAR-1002,Northstar Motor Carriers,3021988,MC-901442,True,False,True
+CAR-1003,Pacific Coast Transport,1198274,MC-551028,True,True,False
+CAR-1004,Central Valley Logistics,4109921,MC-120447,True,False,False
+CAR-1005,Keystone Express Freight,2876310,MC-773501,True,True,True

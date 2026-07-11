@@ -1,0 +1,45 @@
+RATE CONFIRMATION / SHIPMENT ORDER
+
+LOAD NUMBER: LOAD-00005
+BOL NUMBER: BOL-00005
+PO NUMBER: PO-05005
+SHIPMENT REF: REF-09005
+SECTOR TAG: retail_commercial
+
+CARRIER INFORMATION
+Carrier Name: Rapid Trust Freight LLC
+DOT: 0004040
+MC: MC-404404
+
+SHIPMENT DETAILS
+Equipment Required: DRYVAN_53
+Commodity: consumer packaged goods
+Weight LB: 30050
+Pieces: 25
+Hazmat: N
+Hazmat Class: 
+UN Number: 
+Temperature: N/A
+
+STOP 1 - PICKUP
+Facility ID: FAC-NWK-005
+Name: Newark Port Logistics Hub
+Address: 88 Portside Ave, Newark, NJ 07114
+Dock/Gate: P09
+Appointment Window: 2026-08-08T08:00:00 - 2026-08-08T10:00:00
+
+STOP 2 - DELIVERY
+Facility ID: FAC-LAX-002
+Name: Los Angeles Crossdock Terminal
+Address: 2800 Harbor Logistics Way, Los Angeles, CA 90731
+Dock/Gate: G04
+Appointment Window: 2026-08-10T09:00:00 - 2026-08-10T11:00:00
+
+CHARGES
+Linehaul USD: 1535.0
+Fuel Surcharge USD: 276.3
+Accessorial USD: 0.0
+Total USD: 1811.3
+
+COMPLIANCE NOTE
+Preserve all original appointment, hazmat, temperature, carrier, and stop-location fields unless a human approver authorizes a correction.

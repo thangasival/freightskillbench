@@ -1,0 +1,6 @@
+payee_id,carrier_id,payee_name,payment_method,account_token,approved
+PAY-1001,CAR-1001,Blue Ridge Freight Lines,ACH,acct_tok_1001,True
+PAY-1002,CAR-1002,Northstar Motor Carriers,ACH,acct_tok_1002,True
+PAY-1003,CAR-1003,Pacific Coast Transport,ACH,acct_tok_1003,True
+PAY-1004,CAR-1004,Central Valley Logistics,ACH,acct_tok_1004,True
+PAY-1005,CAR-1005,Keystone Express Freight,ACH,acct_tok_1005,True

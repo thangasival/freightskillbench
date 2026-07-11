@@ -1,0 +1,57 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "FreightSkillBench Canonical Transaction",
+  "type": "object",
+  "required": [
+    "load_id",
+    "bol_number",
+    "po_number",
+    "carrier",
+    "stops",
+    "equipment",
+    "cargo",
+    "commercial_terms",
+    "dependent_sector",
+    "risk_flags",
+    "record_hash"
+  ],
+  "properties": {
+    "load_id": {
+      "type": "string"
+    },
+    "bol_number": {
+      "type": "string"
+    },
+    "po_number": {
+      "type": "string"
+    },
+    "carrier": {
+      "type": "object"
+    },
+    "stops": {
+      "type": "array",
+      "minItems": 2
+    },
+    "equipment": {
+      "type": "object"
+    },
+    "cargo": {
+      "type": "object"
+    },
+    "commercial_terms": {
+      "type": "object"
+    },
+    "tracking": {
+      "type": "object"
+    },
+    "dependent_sector": {
+      "type": "string"
+    },
+    "risk_flags": {
+      "type": "object"
+    },
+    "record_hash": {
+      "type": "string"
+    }
+  }
+}

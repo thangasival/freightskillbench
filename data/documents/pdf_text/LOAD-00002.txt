@@ -1,0 +1,45 @@
+RATE CONFIRMATION / SHIPMENT ORDER
+
+LOAD NUMBER: LOAD-00002
+BOL NUMBER: BOL-00002
+PO NUMBER: PO-05002
+SHIPMENT REF: REF-09002
+SECTOR TAG: retail_commercial
+
+CARRIER INFORMATION
+Carrier Name: Northstar Motor Carriers
+DOT: 3021988
+MC: MC-901442
+
+SHIPMENT DETAILS
+Equipment Required: DRYVAN_53
+Commodity: consumer packaged goods
+Weight LB: 28820
+Pieces: 22
+Hazmat: N
+Hazmat Class: 
+UN Number: 
+Temperature: N/A
+
+STOP 1 - PICKUP
+Facility ID: FAC-LAX-002
+Name: Los Angeles Crossdock Terminal
+Address: 2800 Harbor Logistics Way, Los Angeles, CA 90731
+Dock/Gate: G04
+Appointment Window: 2026-08-05T10:00:00 - 2026-08-05T12:00:00
+
+STOP 2 - DELIVERY
+Facility ID: FAC-NWK-005
+Name: Newark Port Logistics Hub
+Address: 88 Portside Ave, Newark, NJ 07114
+Dock/Gate: P09
+Appointment Window: 2026-08-07T12:00:00 - 2026-08-07T14:00:00
+
+CHARGES
+Linehaul USD: 1424.0
+Fuel Surcharge USD: 256.32
+Accessorial USD: 0.0
+Total USD: 1680.32
+
+COMPLIANCE NOTE
+Preserve all original appointment, hazmat, temperature, carrier, and stop-location fields unless a human approver authorizes a correction.

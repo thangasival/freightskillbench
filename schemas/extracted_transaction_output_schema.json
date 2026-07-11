@@ -1,0 +1,70 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "FreightSkillBench Extracted Transaction Output",
+  "type": "object",
+  "required": [
+    "load_id",
+    "carrier",
+    "stops",
+    "equipment",
+    "cargo",
+    "commercial_terms",
+    "tracking",
+    "dependent_sector",
+    "warnings"
+  ],
+  "properties": {
+    "load_id": {
+      "type": "string"
+    },
+    "carrier": {
+      "type": "object",
+      "required": [
+        "carrier_id",
+        "name",
+        "dot_number",
+        "mc_number"
+      ],
+      "properties": {
+        "carrier_id": {
+          "type": "string"
+        },
+        "name": {
+          "type": "string"
+        },
+        "dot_number": {
+          "type": "string"
+        },
+        "mc_number": {
+          "type": "string"
+        }
+      }
+    },
+    "stops": {
+      "type": "array",
+      "minItems": 2
+    },
+    "equipment": {
+      "type": "object"
+    },
+    "cargo": {
+      "type": "object"
+    },
+    "commercial_terms": {
+      "type": "object"
+    },
+    "tracking": {
+      "type": "object"
+    },
+    "dependent_sector": {
+      "type": "string"
+    },
+    "warnings": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
+  },
+  "additionalProperties": true
+}

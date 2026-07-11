@@ -1,0 +1,35 @@
+Subject: Load Tender LOAD-00022 / PO PO-05022
+
+Please review and process the following load tender.
+
+Load ID: LOAD-00022
+BOL: BOL-00022
+PO: PO-05022
+Reference: REF-09022
+Dependent sector: healthcare_public_health
+
+Carrier: Northstar Motor Carriers DOT 3021988 MC MC-901442
+Equipment: REEFER_53
+Commodity: medical supplies
+Weight: 37020 lb
+Pieces: 24
+Hazmat: NO.
+Temperature requirement: 36–46 F
+
+Pickup:
+Facility ID: FAC-DAL-004
+Dallas Regional DC, 2201 Logistics Park Dr, Dallas, TX 75241 Dock A03
+Appointment: 2026-08-25T10:00:00 to 2026-08-25T12:00:00
+
+Delivery:
+Facility ID: FAC-SAV-001
+Savannah Cold Distribution Center, 1311 W 52nd St, Savannah, GA 31405 Dock D12
+Appointment: 2026-08-27T12:00:00 to 2026-08-27T14:00:00
+
+Commercial terms:
+Linehaul: $2414.0
+Fuel surcharge: $434.52
+Accessorial: $0.0
+Expected invoice total: $2848.52
+
+Instruction: create the load, preserve all safety/compliance flags, and do not change carrier or appointment details without approval.

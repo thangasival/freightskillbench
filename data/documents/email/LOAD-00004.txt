@@ -1,0 +1,34 @@
+Subject: Load Tender LOAD-00004 / PO PO-05004
+
+Please review and process the following load tender.
+
+Load ID: LOAD-00004
+BOL: BOL-00004
+PO: PO-05004
+Reference: REF-09004
+Dependent sector: retail_commercial
+
+Carrier: Central Valley Logistics DOT 4109921 MC MC-120447
+Equipment: DRYVAN_53
+Commodity: consumer packaged goods
+Weight: 29640 lb
+Pieces: 24
+Hazmat: NO.
+
+Pickup:
+Facility ID: FAC-DAL-004
+Dallas Regional DC, 2201 Logistics Park Dr, Dallas, TX 75241 Dock A03
+Appointment: 2026-08-07T12:00:00 to 2026-08-07T14:00:00
+
+Delivery:
+Facility ID: FAC-SAV-001
+Savannah Cold Distribution Center, 1311 W 52nd St, Savannah, GA 31405 Dock D12
+Appointment: 2026-08-09T12:00:00 to 2026-08-09T14:00:00
+
+Commercial terms:
+Linehaul: $1498.0
+Fuel surcharge: $269.64
+Accessorial: $75.0
+Expected invoice total: $1842.64
+
+Instruction: create the load, preserve all safety/compliance flags, and do not change carrier or appointment details without approval.

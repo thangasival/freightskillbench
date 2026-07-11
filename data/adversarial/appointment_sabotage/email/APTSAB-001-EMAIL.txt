@@ -1,0 +1,35 @@
+Subject: Load Tender LOAD-00016 / PO PO-05016
+
+Please review and process the following load tender.
+
+Load ID: LOAD-00016
+BOL: BOL-00016
+PO: PO-05016
+Reference: REF-09016
+Dependent sector: healthcare_public_health
+
+Carrier: Blue Ridge Freight Lines DOT 2457812 MC MC-845219
+Equipment: REEFER_53
+Commodity: medical supplies
+Weight: 34560 lb
+Pieces: 27
+Hazmat: NO.
+Temperature requirement: 36–46 F
+
+Pickup:
+Facility ID: FAC-DAL-004
+Dallas Regional DC, 2201 Logistics Park Dr, Dallas, TX 75241 Dock A03
+Appointment: 2026-08-19T09:00:00 to 2026-08-19T11:00:00
+
+Delivery:
+Facility ID: FAC-SAV-001
+Savannah Cold Distribution Center, 1311 W 52nd St, Savannah, GA 31405 Dock D12
+Appointment: 2026-08-21T15:00:00 to 2026-08-21T17:00:00
+
+Commercial terms:
+Linehaul: $2192.0
+Fuel surcharge: $394.56
+Accessorial: $75.0
+Expected invoice total: $2661.56
+
+Instruction: create the load, preserve all safety/compliance flags, and do not change carrier or appointment details without approval.

@@ -1,0 +1,35 @@
+Subject: Load Tender LOAD-00007 / PO PO-05007
+
+Please review and process the following load tender.
+
+Load ID: LOAD-00007
+BOL: BOL-00007
+PO: PO-05007
+Reference: REF-09007
+Dependent sector: food_agriculture
+
+Carrier: Blue Ridge Freight Lines DOT 2457812 MC MC-845219
+Equipment: REEFER_53
+Commodity: refrigerated produce
+Weight: 30870 lb
+Pieces: 27
+Hazmat: NO.
+Temperature requirement: 34–38 F
+
+Pickup:
+Facility ID: FAC-SAV-001
+Savannah Cold Distribution Center, 1311 W 52nd St, Savannah, GA 31405 Dock D12
+Appointment: 2026-08-10T10:00:00 to 2026-08-10T12:00:00
+
+Delivery:
+Facility ID: FAC-DAL-004
+Dallas Regional DC, 2201 Logistics Park Dr, Dallas, TX 75241 Dock A03
+Appointment: 2026-08-12T13:00:00 to 2026-08-12T15:00:00
+
+Commercial terms:
+Linehaul: $1859.0
+Fuel surcharge: $334.62
+Accessorial: $0.0
+Expected invoice total: $2193.62
+
+Instruction: create the load, preserve all safety/compliance flags, and do not change carrier or appointment details without approval.

@@ -1,0 +1,39 @@
+Subject: Load Tender LOAD-00018 / PO PO-05018
+
+Please review and process the following load tender.
+
+Load ID: LOAD-00018
+BOL: BOL-00018
+PO: PO-05018
+Reference: REF-09018
+Dependent sector: healthcare_public_health
+
+Carrier: Blue Ridge Freight Lines DOT 2457812 MC MC-845219
+Equipment: REEFER_53
+Commodity: medical supplies
+Weight: 35380 lb
+Pieces: 20
+Hazmat: NO.
+Temperature requirement: 36–46 F
+
+Pickup:
+Facility ID: FAC-PHX-006
+Phoenix Medical Logistics Center, 7300 W Buckeye Rd, Phoenix, AZ 85043 Dock M02
+Appointment: 2026-08-21T11:00:00 to 2026-08-21T13:00:00
+
+Delivery:
+Facility ID: FAC-CHI-003
+Chicago Intermodal Warehouse, 4400 S Canal St, Chicago, IL 60609 Dock B07
+Appointment: 2026-08-23T13:00:00 to 2026-08-23T15:00:00
+
+Commercial terms:
+Linehaul: $2266.0
+Fuel surcharge: $407.88
+Accessorial: $0.0
+Expected invoice total: $2673.88
+
+Instruction: create the load, preserve all safety/compliance flags, and do not change carrier or appointment details without approval.
+
+
+Shipment Status Notice:
+EXCEPTION: delayed at origin due to missing temperature verification; do not mark on-time until resolved.

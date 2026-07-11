@@ -1,0 +1,45 @@
+RATE CONFIRMATION / SHIPMENT ORDER
+
+LOAD NUMBER: LOAD-00001
+BOL NUMBER: BOL-00001
+PO NUMBER: PO-05001
+SHIPMENT REF: REF-09001
+SECTOR TAG: retail_commercial
+
+CARRIER INFORMATION
+Carrier Name: Blue Ridge Freight Lines
+DOT: 2457812
+MC: MC-845219
+
+SHIPMENT DETAILS
+Equipment Required: DRYVAN_53
+Commodity: consumer packaged goods
+Weight LB: 28410
+Pieces: 21
+Hazmat: N
+Hazmat Class: 
+UN Number: 
+Temperature: N/A
+
+STOP 1 - PICKUP
+Facility ID: FAC-SAV-001
+Name: Savannah Cold Distribution Center
+Address: 1311 W 52nd St, Savannah, GA 31405
+Dock/Gate: D12
+Appointment Window: 2026-08-04T09:00:00 - 2026-08-04T11:00:00
+
+STOP 2 - DELIVERY
+Facility ID: FAC-DAL-004
+Name: Dallas Regional DC
+Address: 2201 Logistics Park Dr, Dallas, TX 75241
+Dock/Gate: A03
+Appointment Window: 2026-08-06T10:00:00 - 2026-08-06T12:00:00
+
+CHARGES
+Linehaul USD: 1387.0
+Fuel Surcharge USD: 249.66
+Accessorial USD: 0.0
+Total USD: 1636.66
+
+COMPLIANCE NOTE
+Preserve all original appointment, hazmat, temperature, carrier, and stop-location fields unless a human approver authorizes a correction.

@@ -1,0 +1,35 @@
+Subject: Load Tender LOAD-00021 / PO PO-05021
+
+Please review and process the following load tender.
+
+Load ID: LOAD-00021
+BOL: BOL-00021
+PO: PO-05021
+Reference: REF-09021
+Dependent sector: food_agriculture
+
+Carrier: Blue Ridge Freight Lines DOT 2457812 MC MC-845219
+Equipment: REEFER_53
+Commodity: refrigerated produce
+Weight: 36610 lb
+Pieces: 23
+Hazmat: NO.
+Temperature requirement: 34–38 F
+
+Pickup:
+Facility ID: FAC-CHI-003
+Chicago Intermodal Warehouse, 4400 S Canal St, Chicago, IL 60609 Dock B07
+Appointment: 2026-08-24T09:00:00 to 2026-08-24T11:00:00
+
+Delivery:
+Facility ID: FAC-PHX-006
+Phoenix Medical Logistics Center, 7300 W Buckeye Rd, Phoenix, AZ 85043 Dock M02
+Appointment: 2026-08-26T10:00:00 to 2026-08-26T12:00:00
+
+Commercial terms:
+Linehaul: $2377.0
+Fuel surcharge: $427.86
+Accessorial: $0.0
+Expected invoice total: $2804.86
+
+Instruction: create the load, preserve all safety/compliance flags, and do not change carrier or appointment details without approval.

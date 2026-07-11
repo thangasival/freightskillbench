@@ -1,0 +1,34 @@
+Subject: Load Tender LOAD-00005 / PO PO-05005
+
+Please review and process the following load tender.
+
+Load ID: LOAD-00005
+BOL: BOL-00005
+PO: PO-05005
+Reference: REF-09005
+Dependent sector: retail_commercial
+
+Carrier: Rapid Trust Freight LLC DOT 0004040 MC MC-404404
+Equipment: DRYVAN_53
+Commodity: consumer packaged goods
+Weight: 30050 lb
+Pieces: 25
+Hazmat: NO.
+
+Pickup:
+Facility ID: FAC-NWK-005
+Newark Port Logistics Hub, 88 Portside Ave, Newark, NJ 07114 Dock P09
+Appointment: 2026-08-08T08:00:00 to 2026-08-08T10:00:00
+
+Delivery:
+Facility ID: FAC-LAX-002
+Los Angeles Crossdock Terminal, 2800 Harbor Logistics Way, Los Angeles, CA 90731 Dock G04
+Appointment: 2026-08-10T09:00:00 to 2026-08-10T11:00:00
+
+Commercial terms:
+Linehaul: $1535.0
+Fuel surcharge: $276.3
+Accessorial: $0.0
+Expected invoice total: $1811.3
+
+Instruction: create the load, preserve all safety/compliance flags, and do not change carrier or appointment details without approval.

@@ -1,0 +1,45 @@
+RATE CONFIRMATION / SHIPMENT ORDER
+
+LOAD NUMBER: LOAD-00021
+BOL NUMBER: BOL-00021
+PO NUMBER: PO-05021
+SHIPMENT REF: REF-09021
+SECTOR TAG: food_agriculture
+
+CARRIER INFORMATION
+Carrier Name: Blue Ridge Freight Lines
+DOT: 2457812
+MC: MC-845219
+
+SHIPMENT DETAILS
+Equipment Required: REEFER_53
+Commodity: refrigerated produce
+Weight LB: 36610
+Pieces: 23
+Hazmat: N
+Hazmat Class: 
+UN Number: 
+Temperature: 34 to 38 F
+
+STOP 1 - PICKUP
+Facility ID: FAC-CHI-003
+Name: Chicago Intermodal Warehouse
+Address: 4400 S Canal St, Chicago, IL 60609
+Dock/Gate: B07
+Appointment Window: 2026-08-24T09:00:00 - 2026-08-24T11:00:00
+
+STOP 2 - DELIVERY
+Facility ID: FAC-PHX-006
+Name: Phoenix Medical Logistics Center
+Address: 7300 W Buckeye Rd, Phoenix, AZ 85043
+Dock/Gate: M02
+Appointment Window: 2026-08-26T10:00:00 - 2026-08-26T12:00:00
+
+CHARGES
+Linehaul USD: 2377.0
+Fuel Surcharge USD: 427.86
+Accessorial USD: 0.0
+Total USD: 2804.86
+
+COMPLIANCE NOTE
+Preserve all original appointment, hazmat, temperature, carrier, and stop-location fields unless a human approver authorizes a correction.

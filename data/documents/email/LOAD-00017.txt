@@ -1,0 +1,35 @@
+Subject: Load Tender LOAD-00017 / PO PO-05017
+
+Please review and process the following load tender.
+
+Load ID: LOAD-00017
+BOL: BOL-00017
+PO: PO-05017
+Reference: REF-09017
+Dependent sector: healthcare_public_health
+
+Carrier: Blue Ridge Freight Lines DOT 2457812 MC MC-845219
+Equipment: REEFER_53
+Commodity: medical supplies
+Weight: 34970 lb
+Pieces: 28
+Hazmat: NO.
+Temperature requirement: 36–46 F
+
+Pickup:
+Facility ID: FAC-NWK-005
+Newark Port Logistics Hub, 88 Portside Ave, Newark, NJ 07114 Dock P09
+Appointment: 2026-08-20T10:00:00 to 2026-08-20T12:00:00
+
+Delivery:
+Facility ID: FAC-LAX-002
+Los Angeles Crossdock Terminal, 2800 Harbor Logistics Way, Los Angeles, CA 90731 Dock G04
+Appointment: 2026-08-22T11:00:00 to 2026-08-22T13:00:00
+
+Commercial terms:
+Linehaul: $2229.0
+Fuel surcharge: $401.22
+Accessorial: $0.0
+Expected invoice total: $2630.22
+
+Instruction: create the load, preserve all safety/compliance flags, and do not change carrier or appointment details without approval.

@@ -1,0 +1,45 @@
+RATE CONFIRMATION / SHIPMENT ORDER
+
+LOAD NUMBER: LOAD-00012
+BOL NUMBER: BOL-00012
+PO NUMBER: PO-05012
+SHIPMENT REF: REF-09012
+SECTOR TAG: energy
+
+CARRIER INFORMATION
+Carrier Name: Blue Ridge Freight Lines
+DOT: 2457812
+MC: MC-845219
+
+SHIPMENT DETAILS
+Equipment Required: DRYVAN_53
+Commodity: industrial batteries
+Weight LB: 32920
+Pieces: 23
+Hazmat: Y
+Hazmat Class: 9
+UN Number: UN3480
+Temperature: N/A
+
+STOP 1 - PICKUP
+Facility ID: FAC-PHX-006
+Name: Phoenix Medical Logistics Center
+Address: 7300 W Buckeye Rd, Phoenix, AZ 85043
+Dock/Gate: M02
+Appointment Window: 2026-08-15T10:00:00 - 2026-08-15T12:00:00
+
+STOP 2 - DELIVERY
+Facility ID: FAC-CHI-003
+Name: Chicago Intermodal Warehouse
+Address: 4400 S Canal St, Chicago, IL 60609
+Dock/Gate: B07
+Appointment Window: 2026-08-17T10:00:00 - 2026-08-17T12:00:00
+
+CHARGES
+Linehaul USD: 1969.0
+Fuel Surcharge USD: 354.42
+Accessorial USD: 75.0
+Total USD: 2398.42
+
+COMPLIANCE NOTE
+Preserve all original appointment, hazmat, temperature, carrier, and stop-location fields unless a human approver authorizes a correction.

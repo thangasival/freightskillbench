@@ -1,0 +1,45 @@
+RATE CONFIRMATION / SHIPMENT ORDER
+
+LOAD NUMBER: LOAD-00004
+BOL NUMBER: BOL-00004
+PO NUMBER: PO-05004
+SHIPMENT REF: REF-09004
+SECTOR TAG: retail_commercial
+
+CARRIER INFORMATION
+Carrier Name: Rapid Trust Freight LLC
+DOT: 0004040
+MC: MC-404404
+
+SHIPMENT DETAILS
+Equipment Required: DRYVAN_53
+Commodity: consumer packaged goods
+Weight LB: 29640
+Pieces: 24
+Hazmat: N
+Hazmat Class: 
+UN Number: 
+Temperature: N/A
+
+STOP 1 - PICKUP
+Facility ID: FAC-DAL-004
+Name: Dallas Regional DC
+Address: 2201 Logistics Park Dr, Dallas, TX 75241
+Dock/Gate: A03
+Appointment Window: 2026-08-07T12:00:00 - 2026-08-07T14:00:00
+
+STOP 2 - DELIVERY
+Facility ID: FAC-SAV-001
+Name: Savannah Cold Distribution Center
+Address: 1311 W 52nd St, Savannah, GA 31405
+Dock/Gate: D12
+Appointment Window: 2026-08-09T12:00:00 - 2026-08-09T14:00:00
+
+CHARGES
+Linehaul USD: 1498.0
+Fuel Surcharge USD: 269.64
+Accessorial USD: 75.0
+Total USD: 1842.64
+
+COMPLIANCE NOTE
+Preserve all original appointment, hazmat, temperature, carrier, and stop-location fields unless a human approver authorizes a correction.

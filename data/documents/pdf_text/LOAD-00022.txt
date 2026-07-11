@@ -1,0 +1,45 @@
+RATE CONFIRMATION / SHIPMENT ORDER
+
+LOAD NUMBER: LOAD-00022
+BOL NUMBER: BOL-00022
+PO NUMBER: PO-05022
+SHIPMENT REF: REF-09022
+SECTOR TAG: healthcare_public_health
+
+CARRIER INFORMATION
+Carrier Name: Northstar Motor Carriers
+DOT: 3021988
+MC: MC-901442
+
+SHIPMENT DETAILS
+Equipment Required: REEFER_53
+Commodity: medical supplies
+Weight LB: 37020
+Pieces: 24
+Hazmat: N
+Hazmat Class: 
+UN Number: 
+Temperature: 36 to 46 F
+
+STOP 1 - PICKUP
+Facility ID: FAC-DAL-004
+Name: Dallas Regional DC
+Address: 2201 Logistics Park Dr, Dallas, TX 75241
+Dock/Gate: A03
+Appointment Window: 2026-08-25T10:00:00 - 2026-08-25T12:00:00
+
+STOP 2 - DELIVERY
+Facility ID: FAC-SAV-001
+Name: Savannah Cold Distribution Center
+Address: 1311 W 52nd St, Savannah, GA 31405
+Dock/Gate: D12
+Appointment Window: 2026-08-27T12:00:00 - 2026-08-27T14:00:00
+
+CHARGES
+Linehaul USD: 2414.0
+Fuel Surcharge USD: 434.52
+Accessorial USD: 0.0
+Total USD: 2848.52
+
+COMPLIANCE NOTE
+Preserve all original appointment, hazmat, temperature, carrier, and stop-location fields unless a human approver authorizes a correction.

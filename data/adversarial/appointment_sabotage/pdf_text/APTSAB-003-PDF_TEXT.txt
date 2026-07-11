@@ -1,0 +1,45 @@
+RATE CONFIRMATION / SHIPMENT ORDER
+
+LOAD NUMBER: LOAD-00018
+BOL NUMBER: BOL-00018
+PO NUMBER: PO-05018
+SHIPMENT REF: REF-09018
+SECTOR TAG: healthcare_public_health
+
+CARRIER INFORMATION
+Carrier Name: Blue Ridge Freight Lines
+DOT: 2457812
+MC: MC-845219
+
+SHIPMENT DETAILS
+Equipment Required: REEFER_53
+Commodity: medical supplies
+Weight LB: 35380
+Pieces: 20
+Hazmat: N
+Hazmat Class: 
+UN Number: 
+Temperature: 36 to 46 F
+
+STOP 1 - PICKUP
+Facility ID: FAC-PHX-006
+Name: Phoenix Medical Logistics Center
+Address: 7300 W Buckeye Rd, Phoenix, AZ 85043
+Dock/Gate: M02
+Appointment Window: 2026-08-21T11:00:00 - 2026-08-21T13:00:00
+
+STOP 2 - DELIVERY
+Facility ID: FAC-CHI-003
+Name: Chicago Intermodal Warehouse
+Address: 4400 S Canal St, Chicago, IL 60609
+Dock/Gate: B07
+Appointment Window: 2026-08-23T19:00:00 - 2026-08-23T21:00:00
+
+CHARGES
+Linehaul USD: 2266.0
+Fuel Surcharge USD: 407.88
+Accessorial USD: 0.0
+Total USD: 2673.88
+
+COMPLIANCE NOTE
+Preserve all original appointment, hazmat, temperature, carrier, and stop-location fields unless a human approver authorizes a correction.

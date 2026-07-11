@@ -1,0 +1,45 @@
+RATE CONFIRMATION / SHIPMENT ORDER
+
+LOAD NUMBER: LOAD-00014
+BOL NUMBER: BOL-00014
+PO NUMBER: PO-05014
+SHIPMENT REF: REF-09014
+SECTOR TAG: energy
+
+CARRIER INFORMATION
+Carrier Name: Blue Ridge Freight Lines
+DOT: 2457812
+MC: MC-845219
+
+SHIPMENT DETAILS
+Equipment Required: DRYVAN_53
+Commodity: industrial batteries
+Weight LB: 33740
+Pieces: 25
+Hazmat: N
+Hazmat Class: 
+UN Number: 
+Temperature: N/A
+
+STOP 1 - PICKUP
+Facility ID: FAC-LAX-002
+Name: Los Angeles Crossdock Terminal
+Address: 2800 Harbor Logistics Way, Los Angeles, CA 90731
+Dock/Gate: G04
+Appointment Window: 2026-08-17T12:00:00 - 2026-08-17T14:00:00
+
+STOP 2 - DELIVERY
+Facility ID: FAC-NWK-005
+Name: Newark Port Logistics Hub
+Address: 88 Portside Ave, Newark, NJ 07114
+Dock/Gate: P09
+Appointment Window: 2026-08-19T14:00:00 - 2026-08-19T16:00:00
+
+CHARGES
+Linehaul USD: 2043.0
+Fuel Surcharge USD: 367.74
+Accessorial USD: 0.0
+Total USD: 2410.74
+
+COMPLIANCE NOTE
+Preserve all original appointment, hazmat, temperature, carrier, and stop-location fields unless a human approver authorizes a correction.

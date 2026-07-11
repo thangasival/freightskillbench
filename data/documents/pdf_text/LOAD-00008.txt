@@ -1,0 +1,45 @@
+RATE CONFIRMATION / SHIPMENT ORDER
+
+LOAD NUMBER: LOAD-00008
+BOL NUMBER: BOL-00008
+PO NUMBER: PO-05008
+SHIPMENT REF: REF-09008
+SECTOR TAG: food_agriculture
+
+CARRIER INFORMATION
+Carrier Name: Blue Ridge Freight Lines
+DOT: 2457812
+MC: MC-845219
+
+SHIPMENT DETAILS
+Equipment Required: REEFER_53
+Commodity: refrigerated produce
+Weight LB: 31280
+Pieces: 28
+Hazmat: N
+Hazmat Class: 
+UN Number: 
+Temperature: 34 to 38 F
+
+STOP 1 - PICKUP
+Facility ID: FAC-LAX-002
+Name: Los Angeles Crossdock Terminal
+Address: 2800 Harbor Logistics Way, Los Angeles, CA 90731
+Dock/Gate: G04
+Appointment Window: 2026-08-11T11:00:00 - 2026-08-11T13:00:00
+
+STOP 2 - DELIVERY
+Facility ID: FAC-NWK-005
+Name: Newark Port Logistics Hub
+Address: 88 Portside Ave, Newark, NJ 07114
+Dock/Gate: P09
+Appointment Window: 2026-08-13T11:00:00 - 2026-08-13T13:00:00
+
+CHARGES
+Linehaul USD: 1896.0
+Fuel Surcharge USD: 341.28
+Accessorial USD: 75.0
+Total USD: 2312.28
+
+COMPLIANCE NOTE
+Preserve all original appointment, hazmat, temperature, carrier, and stop-location fields unless a human approver authorizes a correction.

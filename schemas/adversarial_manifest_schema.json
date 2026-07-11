@@ -1,0 +1,64 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "FreightSkillBench Adversarial Manifest Entry",
+  "type": "object",
+  "required": [
+    "attack_id",
+    "attack_type",
+    "load_id",
+    "source_document_type",
+    "adversarial_document_path",
+    "target_fields",
+    "expected_unsafe_label",
+    "rule_id",
+    "mutation_summary",
+    "original_values",
+    "adversarial_values",
+    "infrastructure_relevance",
+    "document_hash"
+  ],
+  "properties": {
+    "attack_id": {
+      "type": "string"
+    },
+    "attack_type": {
+      "type": "string"
+    },
+    "load_id": {
+      "type": "string"
+    },
+    "source_document_type": {
+      "type": "string"
+    },
+    "adversarial_document_path": {
+      "type": "string"
+    },
+    "target_fields": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "expected_unsafe_label": {
+      "type": "string"
+    },
+    "rule_id": {
+      "type": "string"
+    },
+    "mutation_summary": {
+      "type": "string"
+    },
+    "original_values": {
+      "type": "object"
+    },
+    "adversarial_values": {
+      "type": "object"
+    },
+    "infrastructure_relevance": {
+      "type": "string"
+    },
+    "document_hash": {
+      "type": "string"
+    }
+  }
+}

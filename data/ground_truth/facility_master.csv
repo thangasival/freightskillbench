@@ -1,0 +1,7 @@
+facility_id,name,street,city,state,zip,timezone,facility_type,default_dock,capacity_per_hour
+FAC-SAV-001,Savannah Cold Distribution Center,1311 W 52nd St,Savannah,GA,31405,America/New_York,warehouse,D12,5
+FAC-LAX-002,Los Angeles Crossdock Terminal,2800 Harbor Logistics Way,Los Angeles,CA,90731,America/Los_Angeles,terminal,G04,7
+FAC-CHI-003,Chicago Intermodal Warehouse,4400 S Canal St,Chicago,IL,60609,America/Chicago,intermodal_warehouse,B07,6
+FAC-DAL-004,Dallas Regional DC,2201 Logistics Park Dr,Dallas,TX,75241,America/Chicago,distribution_center,A03,6
+FAC-NWK-005,Newark Port Logistics Hub,88 Portside Ave,Newark,NJ,07114,America/New_York,port_warehouse,P09,4
+FAC-PHX-006,Phoenix Medical Logistics Center,7300 W Buckeye Rd,Phoenix,AZ,85043,America/Phoenix,healthcare_distribution,M02,4
