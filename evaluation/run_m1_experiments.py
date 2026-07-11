@@ -300,6 +300,8 @@ def build_benign_case(
 
 
 def build_benign_cases(limit: int = 60) -> List[Dict[str, Any]]:
+    started = time.perf_counter()
+    LOGGER.info("Building benign cases: limit=%s", limit)
     records = load_ground_truth()
     manifest = load_manifest()[:limit]
     approved = load_approved_carriers()
@@ -310,6 +312,11 @@ def build_benign_cases(limit: int = 60) -> List[Dict[str, Any]]:
     ]
     manifest_path = ROOT / "data" / "m1_benign" / "m1_benign_manifest.jsonl"
     write_jsonl(manifest_path, cases)
+    LOGGER.info(
+        "Completed benign case generation: cases=%s elapsed=%.2fs",
+        len(cases),
+        time.perf_counter() - started,
+    )
     return cases
 
 
@@ -622,6 +629,7 @@ def discover_archived_extraction_files() -> List[Path]:
 
 def import_archived_adversarial(output_dir: Path, *, force: bool = False) -> int:
     """Import the 300 archived adversarial extractions as repeat index 0."""
+    started = time.perf_counter()
     extraction_path = output_dir / "m1_extractions.jsonl"
     evaluation_path = output_dir / "m1_evaluations.jsonl"
     existing = {extraction_key(row) for row in load_jsonl(extraction_path)}
@@ -629,11 +637,14 @@ def import_archived_adversarial(output_dir: Path, *, force: bool = False) -> int
     imported = 0
 
     files = discover_archived_extraction_files()
+    LOGGER.info("Starting archived adversarial import: output_dir=%s", output_dir)
     if not files:
         LOGGER.warning("No archived extraction files found under outputs/FINAL_PHASE6_LIVE_RESULTS")
+        LOGGER.info("Completed archived adversarial import: imported=0 elapsed=%.2fs", time.perf_counter() - started)
         return 0
 
     for file_path in files:
+        LOGGER.info("Processing archived extraction file %s", file_path.relative_to(ROOT))
         for original in load_jsonl(file_path):
             attack_id = original.get("attack_id")
             case = cases.get(attack_id)
@@ -670,6 +681,12 @@ def import_archived_adversarial(output_dir: Path, *, force: bool = False) -> int
             existing.add(key)
             imported += 1
     LOGGER.info("Imported %s archived adversarial extraction rows", imported)
+    LOGGER.info(
+        "Completed archived adversarial import: imported=%s files=%s elapsed=%.2fs",
+        imported,
+        len(files),
+        time.perf_counter() - started,
+    )
     return imported
 
 
@@ -683,11 +700,20 @@ def run_model_cases(
     delay_between_repeats: int,
     resume: bool,
 ) -> int:
+    started = time.perf_counter()
     extraction_path = output_dir / "m1_extractions.jsonl"
     evaluation_path = output_dir / "m1_evaluations.jsonl"
     existing = {extraction_key(row) for row in load_jsonl(extraction_path)} if resume else set()
     prompt = (ROOT / "agent" / "prompts" / "extraction_prompt.md").read_text(encoding="utf-8")
     generated = 0
+
+    LOGGER.info(
+        "Starting model processing: cases=%s models=%s repeats=%s dry_run=%s",
+        len(cases),
+        len(models),
+        list(repeat_indices),
+        dry_run,
+    )
 
     for repeat_position, repeat_index in enumerate(repeat_indices):
         if repeat_position > 0 and delay_between_repeats > 0:
@@ -701,6 +727,13 @@ def run_model_cases(
                 if key in existing:
                     LOGGER.info("Skipping existing extraction %s", key)
                     continue
+                LOGGER.info(
+                    "Processing arm=%s case=%s model=%s repeat=%s",
+                    case["arm"],
+                    case["case_id"],
+                    model["model_name"],
+                    repeat_index,
+                )
                 document_text = (ROOT / case["document_path"]).read_text(encoding="utf-8")
                 started = time.perf_counter()
 
@@ -774,6 +807,11 @@ def run_model_cases(
                     case["arm"], case["case_id"], model["model_name"], repeat_index,
                     success, row["elapsed_seconds"],
                 )
+    LOGGER.info(
+        "Completed model processing: generated=%s elapsed=%.2fs",
+        generated,
+        time.perf_counter() - started,
+    )
     return generated
 
 
@@ -1085,6 +1123,8 @@ def write_repeat_agreement(extraction_rows: Sequence[Mapping[str, Any]], output_
 
 
 def write_summary(output_dir: Path) -> None:
+    started = time.perf_counter()
+    LOGGER.info("Generating M1 summary: output_dir=%s", output_dir)
     extraction_rows = load_jsonl(output_dir / "m1_extractions.jsonl")
     evaluation_rows = load_jsonl(output_dir / "m1_evaluations.jsonl")
     write_policy_metrics(evaluation_rows, output_dir)
@@ -1118,6 +1158,11 @@ def write_summary(output_dir: Path) -> None:
         "- `m1_extractions.jsonl` and `m1_evaluations.jsonl`: auditable row-level traces.\n\n"
         "Do not copy numerical claims into the manuscript until these files are inspected and the run inventory matches the intended design.\n",
         encoding="utf-8",
+    )
+    LOGGER.info(
+        "Completed M1 summary generation: summary=%s elapsed=%.2fs",
+        summary_path,
+        time.perf_counter() - started,
     )
 
 
@@ -1154,6 +1199,13 @@ def main() -> None:
     )
     output_dir = ROOT / args.output_dir
     output_dir.mkdir(parents=True, exist_ok=True)
+    started = time.perf_counter()
+    LOGGER.info(
+        "Starting M1 experiment workflow: mode=%s dry_run=%s output_dir=%s",
+        args.mode,
+        args.dry_run or not args.live,
+        output_dir,
+    )
 
     if args.mode in {"all", "import-archive", "reference", "benign", "repeats"}:
         import_archived_adversarial(output_dir, force=args.force_archive_import)
@@ -1208,6 +1260,11 @@ def main() -> None:
         LOGGER.info("Generated %s reference-sensitivity rows", rows)
 
     write_summary(output_dir)
+    LOGGER.info(
+        "Completed M1 experiment workflow: mode=%s elapsed=%.2fs",
+        args.mode,
+        time.perf_counter() - started,
+    )
     print(f"M1 outputs written to: {output_dir}")
     print(f"Summary: {output_dir / 'M1_RESULTS_SUMMARY.md'}")
 
