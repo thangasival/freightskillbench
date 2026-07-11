@@ -1,5 +1,3 @@
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.21304557.svg)](https://doi.org/10.5281/zenodo.21304557)
-
 # FreightSkillBench Replication Package
 
 This repository contains the replication package for **FreightSkillBench**, the benchmark and evaluation pipeline used in the SkillChain-Logistics manuscript on agent-skill risk in AI-enabled shipping and logistics infrastructure.
@@ -98,3 +96,15 @@ This package contains synthetic benchmark records only. It does not include prop
 ## Citation and archival deposit
 
 Before public release, add the final GitHub URL and, preferably, create a Zenodo archive DOI for the exact release used in the manuscript.
+
+
+## M1 experimental extension
+
+The peer-review M1 extension adds a matched benign/legitimate-change arm, degraded-reference sensitivity, and repeated-run agreement. Start with:
+
+```bash
+python evaluation/run_m1_experiments.py --mode reference
+python evaluation/run_m1_experiments.py --mode all --dry-run --benign-limit 10 --repeat-limit 5 --additional-repeats 2
+```
+
+For the full live procedure, model environment variables, expected counts, and output definitions, see [`M1_EXPERIMENT_RUNBOOK.md`](M1_EXPERIMENT_RUNBOOK.md).
