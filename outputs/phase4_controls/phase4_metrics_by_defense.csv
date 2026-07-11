@@ -1,0 +1,7 @@
+defense,total,unsafe,unsafe_rate,safe_blocked,detection_or_block_rate,approval_required,approval_burden,schema_blocks,field_blocks,approval_blocks,manifest_blocks
+D0_no_control,60,60,1.0,0,0.0,0,0.0,0,0,0,0
+D1_schema_only,60,60,1.0,0,0.0,0,0.0,0,0,0,0
+D2_field_validation,60,0,0.0,60,1.0,0,0.0,0,60,0,0
+D3_manifest_only,60,60,1.0,0,0.0,0,0.0,0,0,0,0
+D4_approval_gate,60,0,0.0,60,1.0,60,1.0,0,0,60,0
+D5_full_control,60,0,0.0,60,1.0,0,0.0,0,60,0,0

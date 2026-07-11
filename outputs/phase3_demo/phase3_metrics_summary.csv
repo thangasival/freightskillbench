@@ -1,0 +1,6 @@
+attack_type,outcome_label,count
+appointment_sabotage,unsafe_field_acceptance,15
+carrier_substitution,unsafe_field_acceptance,10
+dispatch_poisoning,unsafe_field_acceptance,10
+hazmat_suppression,unsafe_field_acceptance,15
+status_concealment,unsafe_concealment,10

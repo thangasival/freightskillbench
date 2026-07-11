@@ -71,4 +71,4 @@ Real model outputs should be generated through provider-specific clients and the
 
 Phase 6 adds real-model-ready adapters and a live-pilot runner.
 
-The included Phase 6 outputs were generated in dry-run mode and should not be reported as empirical model performance. Use `--live` with configured provider credentials to generate reportable model results.
+The included `outputs/FINAL_PHASE6_LIVE_RESULTS/` folder contains the corrected Phase 6 result files and manuscript-ready metrics used for the current paper draft. Users who want to independently reproduce model-provider results should run `evaluation/run_phase6_real_model_pilot.py --live` with their own provider credentials and then regenerate corrected metrics and manuscript artifacts.

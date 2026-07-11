@@ -1,123 +1,98 @@
-# FreightSkillBench Manuscript Table and Figure Generation Package
+# FreightSkillBench Replication Package
 
-## Purpose
+This repository contains the replication package for **FreightSkillBench**, the benchmark and evaluation pipeline used in the SkillChain-Logistics manuscript on agent-skill risk in AI-enabled shipping and logistics infrastructure.
 
-This package generates manuscript-ready tables, PNG figures, Markdown tables, and LaTeX tables from the corrected Phase 6 live metrics.
-
-## Required input files
-
-Place these files in one input folder, for example:
+## Contents
 
 ```text
-outputs/FINAL_PHASE6_LIVE_RESULTS/
-  phase6_limit60_combined_model_defense_metrics.csv
-  phase6_limit60_corrected_model_defense_attack_metrics.csv
-  phase6_limit60_corrected_model_defense_doctype_metrics.csv
-  phase6_limit60_extraction_success_summary.csv
+data/                         Synthetic benchmark data and ground truth
+schemas/                      JSON schemas for transactions and adversarial manifests
+scripts/                      Data, metric, and manuscript-artifact generation scripts
+agent/                        Simulated and provider-backed extraction clients
+tms_mock/                     Mock TMS/API simulator with audit logging
+security/                     D0-D5 defense-control implementations
+adjudication/                 Rule-based unsafe-transaction adjudication
+outputs/FINAL_PHASE6_LIVE_RESULTS/  Corrected Phase 6 result metrics and raw output folders
+manuscript_artifacts/         Tables and figures used by the manuscript
+DATA_CARD.md                  Dataset description, intended use, and limitations
+requirements.txt              Python package requirements
+.env.example                  Template for optional live provider credentials
 ```
 
-## Install dependencies
+## Setup
+
+Python 3.10+ is recommended.
 
 ```bash
-pip install pandas matplotlib tabulate
+python -m venv .venv
+# Windows
+.venv\Scripts\activate
+# macOS/Linux
+source .venv/bin/activate
+
+pip install -r requirements.txt
 ```
 
-`tabulate` is needed for Pandas Markdown table export.
+## Reproduce deterministic benchmark stages
 
-## Run on Windows CMD
+These stages do not require model-provider credentials.
 
-From the project root:
-
-```cmd
-python scripts\generate_paper_tables_figures.py --input-dir outputs\FINAL_PHASE6_LIVE_RESULTS --output-dir manuscript_artifacts
+```bash
+python scripts/generate_phase1.py
+python scripts/generate_phase2.py
+python scripts/validate_phase2.py
+python evaluation/run_phase3_demo.py
+python evaluation/run_phase4_controls.py
+python evaluation/run_phase5_model_extraction.py
 ```
 
-## Run on macOS / Linux
+Expected Phase 4 pattern:
+
+```text
+D0_no_control: unsafe=60/60
+D1_schema_only: unsafe=60/60
+D2_field_validation: unsafe=0/60
+D3_manifest_only: unsafe=60/60
+D4_approval_gate: unsafe=0/60
+D5_full_control: unsafe=0/60
+```
+
+## Optional live model run
+
+Copy `.env.example` to `.env` or export variables in the shell. Do **not** commit real API keys.
+
+```bash
+python evaluation/run_phase6_real_model_pilot.py --live --limit 60
+```
+
+For offline pipeline validation:
+
+```bash
+python evaluation/run_phase6_real_model_pilot.py --dry-run --limit 10
+```
+
+## Regenerate corrected metrics from raw Phase 6 outputs
+
+```bash
+python scripts/regenerate_corrected_metrics_from_raw_outputs.py --raw-output-dir outputs --output-dir outputs/FINAL_PHASE6_LIVE_RESULTS
+```
+
+## Generate manuscript tables and figures
 
 ```bash
 python scripts/generate_paper_tables_figures.py --input-dir outputs/FINAL_PHASE6_LIVE_RESULTS --output-dir manuscript_artifacts
 ```
 
-## Outputs
-
-```text
-manuscript_artifacts/
-  tables/
-    table_1_attack_taxonomy.csv
-    table_2_model_defense_unsafe_rates.csv
-    table_3_attack_breakdown.csv
-    table_4_document_type_breakdown.csv
-    table_5_extraction_success.csv
-
-  markdown/
-    table_1_attack_taxonomy.md
-    table_2_model_defense_unsafe_rates.md
-    table_3_attack_breakdown.md
-    table_4_document_type_breakdown.md
-    table_5_extraction_success.md
-    results_narrative_draft.md
-
-  latex/
-    table_1_attack_taxonomy.tex
-    table_2_model_defense_unsafe_rates.tex
-    table_3_attack_breakdown.tex
-    table_4_document_type_breakdown.tex
-    table_5_extraction_success.tex
-
-  figures/
-    figure_3_model_defense_unsafe_heatmap.png
-    figure_4_average_unsafe_rate_by_defense.png
-    figure_5_attack_defense_unsafe_rate.png
-    figure_6_doctype_unsafe_rate_d0.png
-    figure_7_extraction_success_rate.png
-```
+Generated outputs include CSV, Markdown, LaTeX, and PNG artifacts under `manuscript_artifacts/`.
 
 ## Mermaid figures
 
-See:
+See `docs/mermaid_figures.md` for the manuscript's Mermaid diagram source.
 
-```text
-docs/mermaid_figures.md
-```
+## Data and privacy
 
-This file includes Mermaid code for:
+This package contains synthetic benchmark records only. It does not include proprietary logistics records, customer data, carrier operational data, or provider API keys. Synthetic account tokens and payment identifiers in the CSV files are benchmark placeholders, not real credentials.
 
-1. SkillChain-Logistics threat model
-2. FreightSkillBench benchmark pipeline
-3. D0-D5 defense stack
-4. Attack taxonomy
-5. Cyber/logical interdependency framing
-6. Results interpretation logic
+## Citation and archival deposit
 
-## Recommended paper usage
-
-Use these as the core manuscript artifacts:
-
-| Manuscript item | Generated source |
-|---|---|
-| Table 1 | `table_1_attack_taxonomy.*` |
-| Table 2 | `table_2_model_defense_unsafe_rates.*` |
-| Table 3 | `table_3_attack_breakdown.*` |
-| Table 4 | `table_4_document_type_breakdown.*` |
-| Table 5 | `table_5_extraction_success.*` |
-| Figure 1 | Mermaid threat model |
-| Figure 2 | Mermaid benchmark pipeline |
-| Figure 3 | `figure_3_model_defense_unsafe_heatmap.png` |
-| Figure 4 | `figure_4_average_unsafe_rate_by_defense.png` |
-| Figure 5 | `figure_5_attack_defense_unsafe_rate.png` |
-| Figure 6 | `figure_6_doctype_unsafe_rate_d0.png` |
-
-
-## Fix for empty document-type figure
-
-If `figure_6_doctype_unsafe_rate_d0.png` is blank or Table 4 has `NaN` under `source_document_type`, regenerate the corrected metrics from raw Phase 6 output folders:
-
-```cmd
-python scripts\regenerate_corrected_metrics_from_raw_outputs.py --raw-output-dir outputs --output-dir outputs\FINAL_PHASE6_LIVE_RESULTS
-```
-
-Then regenerate tables and figures:
-
-```cmd
-python scripts\generate_paper_tables_figures.py --input-dir outputs\FINAL_PHASE6_LIVE_RESULTS --output-dir manuscript_artifacts
-```
+Before public release, add the final GitHub URL and, preferably, create a Zenodo archive DOI for the exact release used in the manuscript.
